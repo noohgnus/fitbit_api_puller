@@ -1,7 +1,10 @@
 import sys
 import json
 import base64
-import urllib2
+try: 
+  import urllib.request as urllib2
+except ImportError:
+  import urllib2
 import urllib
 
 #These are the secrets etc from Fitbit developer
